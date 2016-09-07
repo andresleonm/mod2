@@ -4,11 +4,99 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<title></title>
-</head>
+	<title>Menu</title>
+</head>    
 <body>
-	<div>
+    <style>            
+        
+        /******* DESKTOP *******/
+        
+        @media (min-width: 992px){                   
+            
+            p {
+                float: left;
+                background-color: gray;        
+                border-color: black;  
+                margin-right: 20px;
+                margin-left: 10px;
+                width: 30%;  
+            }       
+            
+            h2 {
+                                
+            }
+          
+        }
+        
+        /******* TABLET *******/
+        
+        @media (min-width: 768px) and (max-width: 991px){
+            
+            #chicken,#beef {
+                float: left;                          
+                margin-right: 10px;
+                width: 45%;  
+            }  
+            
+            #sushi {
+                float:left;                  
+                width: 91.8%;  
+            }
 
-	</div>
+        }
+        
+        /******* MOBILE *******/
+
+        @media (max-width: 767px){
+            p {
+                width: 100%;
+            }
+        }  
+        
+        /******* GENERAL *******/
+        
+        body {
+            box-sizing: border-box;
+        }
+        
+        h1 {
+            box-sizing: border-box;
+            text-align: center   
+        }
+        
+        p {
+            box-sizing: border-box;
+            padding-top: 45px;
+            border: 3px solid black;            
+            background-color: gray; 
+        }
+        
+        h2 {
+            box-sizing: border-box;
+            padding:-40px;
+            border: 3px solid black;
+            float : right;
+            position: absolute;
+            left: 85%;
+        }
+        
+    </style>
+    <section>
+        <h1>Our Menu</h1>
+    </section>    
+    <section>
+        <h2>Chicken</h2>
+        <p id="chicken">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin dictum est sit amet convallis. Suspendisse vitae sagittis lectus. Phasellus tempor sapien suscipit consectetur imperdiet. Quisque urna elit, imperdiet ac lacinia ac, egestas ut mauris. Sed venenatis, tortor commodo fermentum semper, dui ligula pretium nulla, ut rutrum massa mi eu est. Fusce ac diam a nisl auctor volutpat. Nullam ac metus rhoncus libero auctor convallis a quis justo.</p>
+    </section>
+
+    <section>
+        <h2>Beef</h2>
+        <p id="beef">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin dictum est sit amet convallis. Suspendisse vitae sagittis lectus. Phasellus tempor sapien suscipit consectetur imperdiet. Quisque urna elit, imperdiet ac lacinia ac, egestas ut mauris. Sed venenatis, tortor commodo fermentum semper, dui ligula pretium nulla, ut rutrum massa mi eu est. Fusce ac diam a nisl auctor volutpat. Nullam ac metus rhoncus libero auctor convallis a quis justo.</p>            
+    </section>
+
+    <section>
+        <h2>Sushi</h2>
+        <p id="sushi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sollicitudin dictum est sit amet convallis. Suspendisse vitae sagittis lectus. Phasellus tempor sapien suscipit consectetur imperdiet. Quisque urna elit, imperdiet ac lacinia ac, egestas ut mauris. Sed venenatis, tortor commodo fermentum semper, dui ligula pretium nulla, ut rutrum massa mi eu est. Fusce ac diam a nisl auctor volutpat. Nullam ac metus rhoncus libero auctor convallis a quis justo.</p>
+    </section>    
 </body>
 </html>
